@@ -48,7 +48,7 @@ public class MockLevelGenerator : MonoBehaviour
 
 	ActiveLevel RandomLevel()
 	{
-		int _maxPlayers = Random.Range( minMaxPlayers, absoluteMaxPlayers );
+		int _maxPlayers = Random.Range( minMaxPlayers, absoluteMaxPlayers + 1 );
 
 		return new ActiveLevel
 		{
